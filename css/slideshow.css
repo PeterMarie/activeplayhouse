@@ -1,0 +1,200 @@
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  height: 7em;
+}
+
+.slider {height: 100%;}
+.body {background-size: cover; background-repeat: no-repeat; height: 100%;}
+
+.mySlides {
+    position: relative;
+    display: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: palegoldenrod;
+    border: 1px ridge rgb(135,135,135);
+    box-shadow: 1px 1px rgb(70,0,0);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -14px;
+  padding: 10px;
+  color: rgb(135,135,135);
+  font-weight: bold;
+  font-size: 8px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.l-dot {left:38%; position: absolute; bottom: 1em;}
+
+.dot {
+  cursor:pointer;
+  height: 6px;
+  width: 6px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (min-width: 240px){
+
+}
+@media only screen and (min-width: 280px){
+
+}
+@media only screen and (min-width: 320px){
+  .slideshow-container {height: 10em;}
+  .l-dot {left: 43%;}
+  .dot {height: 9px; width: 9px;}
+  .prev, .next {font-size: 14px; padding: 16px; margin-top:-18px;}
+
+}
+@media only screen and (min-width: 360px){
+
+}
+@media only screen and (min-width: 400px){
+  .mySlides {width: 100%;}
+  .slideshow-container {height: 12em;}
+  .l-dot {left: 46%;}
+  .dot {height: 13px; width: 13px;}
+  .prev, .next {font-size: 18px; padding: 16px; margin-top:-22px;}
+}
+@media only screen and (min-width: 440px){
+  .slideshow-container {height: 13em;}
+}
+@media only screen and (min-width: 480px){
+  .slideshow-container {height: 14em;}
+}
+@media only screen and (min-width: 520px){
+  .slideshow-container {height: 15em;}
+  .l-dot {left: 45%;}
+}
+@media only screen and (min-width: 560px){
+  .slideshow-container {height: 16em;}
+}
+@media only screen and (min-width: 600px){
+  .slideshow-container {height: 17em;}
+}
+@media only screen and (min-width: 680px){
+  .slideshow-container {height: 19em;}
+}
+@media only screen and (min-width: 720px){
+  .slideshow-container {height: 20.5em;}
+}
+
+/*for desktops*/
+@media only screen and (min-width: 760px){
+  .slideshow-container {height: 21em;}
+}
+@media only screen and (min-width: 800px){
+    .slideshow-container {height: 22em;}
+}
+@media only screen and (min-width: 840px){
+    .slideshow-container {height: 23em;}
+}
+@media only screen and (min-width: 880px){
+    .slideshow-container {height: 24em;}
+}
+@media only screen and (min-width: 920px){
+    .slideshow-container {height: 25em;}
+}
+@media only screen and (min-width: 980px){
+    .slideshow-container {height: 27.5em;}
+}
+@media only screen and (min-width: 1020px){
+    .slideshow-container {height: 28em;}
+}
+@media only screen and (min-width: 1060px){
+    .mySlides {width: 90%; left: 5%;}
+    .slideshow-container {height: 28em;}
+}
+@media only screen and (min-width: 1100px){
+    .mySlides {width: 88%; left: 6%;}
+    .slideshow-container {height: 28em;}
+}
+@media only screen and (min-width: 1140px){
+    .mySlides {width: 82%; left: 9%;}
+    .slideshow-container {height: 28em;}
+}
+@media only screen and (min-width: 1180px){
+    .mySlides {width: 76%; left: 12%;}
+    .slideshow-container {height: 28em;}
+}
+@media only screen and (min-width: 1220px){
+    .mySlides {width: 74%; left: 13%;}
+    .slideshow-container {height: 28em;}
+}
+@media only screen and (min-width: 1360px){
+    .slideshow-container {height: 28.5em;}
+}
+@media only screen and (min-width: 1400px){
+    .slideshow-container {height: 29em;}
+}
+@media only screen and (min-width: 1440px){
+    .slideshow-container {height: 29.5em;}
+}

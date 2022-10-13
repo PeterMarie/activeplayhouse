@@ -1,0 +1,429 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100%; margin: 0; background-color:black; background-image:  url('../images/backgrounds/black-background4.jpg'); background-size: cover;
+}
+#fullbody {height: 100%}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+}
+/*for all sizes*/
+.center {text-align: center; }
+.justify {text-align: justify;}
+.whitetext {color: white;}
+.yellowtext {color: #cecc75;}
+.blacktext {color:black;}
+.white {background-color: white}
+
+a {text-decoration: none;}
+a:active {text-decoration: none;}
+a:visited {text-decoration: none;}
+a.whitelink {text-decoration: none; color:white;}
+a.whitelink:active {text-decoration: none; color:white}
+a.whitelink:visited {text-decoration: none; color:white;}
+a.yellowlink {text-decoration: none; color:#cecc75;}
+a.yellowlink:active {text-decoration: none; color:#cecc75}
+a.yellowlink:visited {text-decoration: none; color:#cecc75;}
+a.blacklink {text-decoration: none; color:black;}
+a.blacklink:active {text-decoration: none; color:black}
+a.blacklink:visited {text-decoration: none; color:black;}
+
+.top-logo {padding: 0; height: 6em; overflow: hidden;}
+.logo {width: 500%; float: left; position: relative; left: -250%; top: -1.2em;}
+.l-title {padding: 1.2em 0 0.1em 0;}
+.title {font-family:'Arizonia', Helvetica, sans-serif; text-shadow: 2px 2px 0px rgba(120,120,120,0.1);  font-size: 170%; font-weight: 400;}
+.s-title {font-size:60%;}
+.lato {font-family: Lato, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.roboto {font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;}
+.menu-bar {height: 3em; overflow: hidden; font-size: 70%;}
+nav {background-color: darkgoldenrod; height: 100%; font-weight: 600;}
+.menu-end-bar {background-color: #886503; height: 100%;}
+ul {list-style-type: none;}
+ul.menu, ul.top-links-list {display: inline-flex; position: relative; left: -4em;}
+li.menu-item {padding: 1em 0.71em 0 1em; top: -1.3em; position: relative; height: 4em;}
+.inactive-menu {border-left: 0.5px solid darkgoldenrod; border-right: 0.5px solid darkgoldenrod;}
+.active-menu, .menu-item:hover {background-color: #755803; border-left: 0.5px solid #655302; border-right: 0.5px solid #655302;}
+#go_to_top_btn {position: fixed; bottom: 10%; right: 4%; border-radius: 50%; background-color: #655302; overflow: hidden; text-align: center; color: ghostwhite; box-shadow: 1px 2px darkgray; display: none; z-index: 5;}
+.page-section {padding: 1em;}
+.section-header {color: darkgoldenrod; font-weight: 600; font-size: 100%;}
+.s-page-section {padding: 0 0 0 0.5em; text-align: justify; line-height: 1.4em; font-size: 80%;}
+.gallery-image {padding:2px;}
+figure.team {border: 2px solid white; margin:1%; height:14em; overflow:hidden;}
+.team-img-home {width:100%;}
+.team-name {font-size:90%;}
+.team-position {font-size:70%; margin-bottom:1em;}
+.contact-section {font-size:80%;}
+.l-sm-icons {width:5%; position:relative; top:0.5em; margin-left:0.3em;}
+.sm-icons {font-size:300%; width:10%;}
+footer {border-top: 1px solid white; font-size: 60%;}
+.footer-col {padding:1em 0.2em 0.5em 0.2em;}
+
+/*for mobile devices only*/
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    
+    .no-mobile {display: none;}
+    .tab-only {display: none;}
+    .desktop-only {display: none;}
+
+@media only screen and (max-width: 250px){
+    .logo {left: -400%;}
+}
+
+@media only screen and (max-width: 300px){
+    .top-logo {height: 5em;}
+    .logo {width: 100px; left: -250%; top:-0.8em; }
+    .title{font-size: 140%;}
+    .s-title{font-size:40%;}
+}
+
+@media only screen and (min-width: 320px){
+    .logo {width:350%; left: -200%;}
+    .title{font-size: 170%;}
+    .s-title{font-size:60%;}
+}
+@media only screen and (min-width: 340px){
+    .logo {width:325%;}
+}
+
+@media only screen and (min-width: 360px){
+    .top-logo {height: 5em;}
+    .logo {width: 300%; left: -160%; top: -0.5em;}
+    .l-title {padding: 1.3em 1.5em 0.1em 0;}
+    .menu-bar {height: 3.2em;}
+    figure.team {height:16em;}
+}
+
+@media only screen and (min-width: 375px){
+    .top-logo {height: 6.5em;}
+    .logo {top: -1em; left:-150%;}
+    figure.team {height:15em;}
+    .title {font-size: 180%;}
+    .s-title {font-size:65%;}
+}
+
+@media only screen and (min-width: 380px){
+    .logo {width:293%; left:-147.15%;}
+}
+@media only screen and (min-width: 390px){
+    .logo {width:279%; left:-141.5%;}
+}
+@media only screen and (min-width: 400px){
+    .logo {width:265%; left:-135.7%;}
+}
+
+@media only screen and (min-width: 410px){
+    .logo {width:250%; top: -1em; left:-130%;}
+    figure.team {height:16em;}
+    .l-title {padding: 1.3em 2em 0.1em 0;}
+    li.menu-item {top: -1em;}
+}
+
+@media only screen and (min-width: 430px){
+    .logo {width:225%; top: -0.8em; left:-115%;}
+}
+
+@media only screen and (min-width: 450px){
+    .top-logo {height: 6.8em;}
+    .logo {width:200%; top: -0.6em; left:-100%;}
+    figure.team {height:16em;}
+    .l-title {padding: 1.5em 3.5em 0.1em 0;}
+    .title {font-size: 200%;}
+    .s-title {font-size:68%;}
+}
+
+@media only screen and (min-width: 475px){
+    .logo {width:187.5%; top: -0.65em; left:-90%;}
+}
+
+@media only screen and (min-width: 500px){
+    .logo {width:175%; top: -0.7em; left:-80%;}
+    figure.team {height:17em;}
+    .l-title {padding: 1.5em 3.5em 0.1em 0;}
+    .title {font-size: 220%;}
+    .s-title {font-size:69%;}
+}
+
+@media only screen and (min-width: 530px){
+    .logo {width:162.5%; top: -0.75em; left:-70%;}
+}
+
+@media only screen and (min-width: 550px){
+    .top-logo {height: 7em;}
+    .logo {width:150%; top: -0.8em; left:-60%;}
+    figure.team {height:19em;}
+    .l-title {padding: 1.5em 3.5em 0.1em 0;}
+    .title {font-size: 220%;}
+    .s-title {font-size:69%;}
+}
+
+
+/*for tablets*/
+@media only screen and (min-width: 600px){
+    [class*="col-"] {
+        padding: 15px;
+    }
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+
+    .no-mobile {display: block;}
+    .mobile-only {display: none;}
+    .mobile-tab {display: block;}
+    .tab-only {display: block;}
+    .desktop-only {display: none;}
+    
+    .top-logo {height: 8em;}
+    .logo {width:400%; top: -1.2em; left:-210%;}
+    figure.team {height:19em;}
+    .l-title {padding: 1em 0 0.1em 1em;}
+    .title {font-size: 280%;}
+    .s-title {font-size:75%;}
+    ul.menu, ul.top-links-list {left: -5em;}
+    li.menu-item {padding: 1em 1em 0 1em; top: -2.3em;}
+    figure.team {height:18em;}
+    footer {font-size: 80%;}
+    .footer-col {padding:1em 0.2em 0.5em 0.2em;}
+    figure.team, .l-sm-icons {padding:0;}
+    .gallery-image {padding:5px;}
+    .team-name {font-size:100%;}
+    .team-position {font-size:80%;}
+    .contact-section {font-size:90%;}
+    .sm-icons {width:7.5%;}
+}
+
+@media only screen and (min-width: 625px){
+    .logo {width:350%; top: -1.1em; left:-185%;}
+}
+
+@media only screen and (min-width: 650px){
+    .logo {width:300%; top: -1em; left:-160%;}
+}
+
+@media only screen and (min-width: 675px){
+    .logo {width:275%; left:-145%;}
+}
+
+@media only screen and (min-width: 700px){
+    .logo {width:250%; left:-130%;}
+    .menu-bar {font-size: 80%;}
+    figure.team {height:19em;}
+}
+
+@media only screen and (min-width: 725px){
+    .logo {width:225%; left:-115%;}
+}
+
+@media only screen and (min-width: 750px){
+    .logo {width:200%; left:-100%;}
+    .section-header {font-size: 115%; line-height: 1.5em;}
+    .s-page-section {font-size: 90%;}
+}
+
+@media only screen and (min-width: 775px){
+    .logo {width:190%; left:-90%;}
+}
+
+@media only screen and (min-width: 800px){
+    .logo {width:180%; left:-80%;}
+    .menu-bar {font-size: 85%;}
+    figure.team {height:20em;}
+}
+
+@media only screen and (min-width: 825px){
+    .logo {width:170%; left:-75%;}
+}
+
+@media only screen and (min-width: 850px){
+    .logo {width:160%; left:-70%;}
+    .menu-bar {font-size: 85%;}
+    figure.team {height:20.5em;}
+}
+
+@media only screen and (min-width: 875px){
+    .logo {width:150%; top: -1.05em; left:-65%;}
+}
+
+@media only screen and (min-width: 900px){
+    .logo {width:140%; top: -1.1em; left:-60%;}
+    .menu-bar {font-size: 90%;}
+    figure.team {height:20.5em;}
+    .title {font-size: 340%;}
+    .s-title {font-size: 82%;}
+    .team-name {font-size:115%;}
+    .team-position {font-size:90%;}
+    figure.team {height:21.5em;}
+}
+
+
+/*for desktops*/
+@media only screen and (min-width: 910px){
+    [class*="col-"] {
+        padding: 15px;
+    }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+    .no-mobile {display: block;}
+    .mobile-only {display: none;}
+    .mobile-tab {display: none;}
+    .tab-only {display: none;}
+    .desktop-only {display: block;}
+
+    .top-logo {height: 8em;}
+    .logo {width:400%; top: -0.8em; left:-200%;}
+    .menu-bar {font-size: 100%;}
+    li.menu-item {padding: 1em 1em 0 1em; top: -2em;}
+    .section-header {font-size: 135%;}
+    .s-page-section {font-size: 105%;}
+    figure.team {height:18.5em;}
+    .gallery-image {padding:5px;}
+    .contact-section {font-size:105%;}
+    .sm-icons {width:6%;}
+    .footer-col {padding:1em 0.2em 0.5em 0.2em;}
+    figure.team, .l-sm-icons {padding:0;}
+}
+
+@media only screen and (min-width: 950px){
+    .top-logo {height: 8.5em;}
+    .logo {width:350%; top: -1em; left:-180%;}
+}
+
+@media only screen and (min-width: 975px){
+    .top-logo {height: 8.75em;}
+    .logo {width:347.5%; top: -1.25em; left:-165%;}
+}
+
+@media only screen and (min-width: 1000px){
+    .top-logo {height: 9em;}
+    .logo {width:345%; top: -1.5em; left:-150%;}
+}
+
+@media only screen and (min-width: 1025px){
+    .top-logo {height: 9em;}
+    .logo {width:342.5%; top: -1.55em; left:-145%;}
+}
+
+@media only screen and (min-width: 1050px){
+    .top-logo {height: 9.5em;}
+    .logo {width: 340%; left: -140%; top: -1.6em;}
+    .l-title {padding: 1em 0 0.1em 0;}
+    .title {font-size: 380%;}
+    .s-title {font-size: 92%;}
+    .menu-bar {height: 3em; font-size: 100%;}
+    ul.menu, ul.top-links-list {left: -4em;}
+    #go_to_top_btn {position: fixed; bottom: 10%; right: 4%; border-radius: 50%; background-color: #655302; overflow: hidden; text-align: center; color: ghostwhite; box-shadow: 1px 2px darkgray; display: none; z-index: 5;}
+    .page-section {padding: 2em 0 0 0;}
+    .section-header {font-size: 160; left:0; line-height: 1.5em;}
+    .s-page-section {font-size: 120%;}
+    .gallery-image {padding:5px;}
+    figure.team {height:19em;}
+    .team-img-home {width:100%; padding-bottom:1em;}
+    .contact-section {font-size:120%;}
+    .sm-icons {width:5%;}
+    footer {font-size: 100%;}
+    .footer-col {padding:1em 0.2em 0.5em 0.2em;}
+    figure.team, .l-sm-icons {padding:0;}
+}
+
+@media only screen and (min-width: 1075px){
+    .top-logo {height: 9.75em;}
+    .logo {width: 330%; left: -130%; top: -1.65em;}
+}
+
+@media only screen and (min-width: 1100px){
+    .top-logo {height: 10em;}
+    .logo {width: 320%; left: -120%; top: -1.7em;}
+}
+
+@media only screen and (min-width: 1125px){
+    .top-logo {height: 10.5em;}
+    .logo {width: 310%; left: -110%; top: -1.75em;}
+}
+
+@media only screen and (min-width: 1150px){
+    .top-logo {height: 11em;}
+    .logo {width: 300%; left: -100%; top: -1.8em;}
+    figure.team {height:20em;}
+}
+
+@media only screen and (min-width: 1175px){
+    .logo {width: 287.5%; top: -1.85em;}
+}
+
+@media only screen and (min-width: 1200px){
+    .top-logo {height: 11.25em;}
+    .logo {width: 275%; top: -1.9em;}
+}
+
+@media only screen and (min-width: 1225px){
+    .logo {width: 262.5%; top: -1.95em;}
+}
+
+@media only screen and (min-width: 1250px){
+    .top-logo {height: 11.5em;}
+    .logo {width: 250%; top: -2em;}
+}
+
+@media only screen and (min-width: 1300px){
+    .top-logo {height: 11.7em;}
+    figure.team {height:20.3em;}
+}
+
+@media only screen and (min-width: 1350px){
+    .top-logo {height: 11.9em;}
+    .logo {width: 220%; left: -80%;}
+    figure.team {height:20.6em;}
+}
+
+@media only screen and (min-width: 1375px){
+    .logo {width: 210%; left: -65%;}
+}
+
+@media only screen and (min-width: 1400px){
+    .top-logo {height: 12em;}
+    .logo {width: 200%; left: -50%;}
+    .title {font-size: 400%;}
+    .s-title {font-size: 100%;}
+    figure.team {height:21em;}
+
+}
+
+/*for wide screens*/
+@media only screen and (orientation: landscape) {
+}

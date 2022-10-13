@@ -1,0 +1,85 @@
+body {
+     margin: 0; display: flex; flex-direction: column; font-family: 'Work Sans', sans-serif; font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 500;
+}
+header {display: flex; flex-direction: column;}
+main {display: flex; flex-direction: column; justify-content: center; align-items: center; padding-bottom: 2em;}
+footer {background-color: rgb(252,252,255);}
+input, .message-home {width: 100%;}
+#fullbody {height: 100%}
+img {
+    height: auto;
+    max-width: 100%;
+}
+button {color: white; background-color: darkgoldenrod; border-radius: 20%; padding: 0.5em;font-family: 'Work Sans', serif;}
+button:hover {background-color: #755803;}
+
+/*fonts*/
+.lato {font-family: Lato, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.roboto {font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;}
+
+/*Screen Reader Only class*/
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    left: -10000px;
+}
+
+/*.welcome {height: 90vh; display: flex; flex-direction: column;}
+
+/*from Azmar Consult*/
+#pageCover {position: fixed; width: 100%; height: 100%; z-index: 2; display: none;}
+.home-form {display: flex; flex-direction: column; align-items: flex-start;}
+.top-header {display: flex; flex-direction: row; justify-content: space-around; width:100vw; padding-left: 5vh; align-items: center; background-color: rgb(0,0,0,0.5);}
+.title-top, .title-bottom {color:palegoldenrod; font-family:'Arizonia', Helvetica, sans-serif; text-shadow: 2px 2px 0px rgba(120,120,120,0.1); font-weight: 400;}
+.top-title {text-align: center; position: relative; left: -2.5%; top: -0.1em; text-shadow: 1px 1px rgb(191,191,191);}
+.title-top {font-size: 100%;}
+.title-bottom {font-size: 100%;}
+.top-footer, .mid-footer, .mid-low-footer {padding-bottom: 2em;}
+.mid-footer { border-top: 1px solid lightgray; border-bottom: 1px solid lightgray;}
+.bottom-footer {display: flex; justify-content: space-around; border-top: 1px solid darkgray; font-size: 70%; background-color: rgba(162,180,188,0.3); padding: 1em 0 1em 0;}
+.l-home-text {display: flex; flex-direction: column; align-items: center;}
+.home-text {text-align: center; font-size: 110%; /*text-shadow: 1px 1px black;*/}
+.home-form-table {margin-bottom: 1em;}
+.home-form-table-cell {padding: 1% 1em 1% 1em; }
+.input-cell {width: 80%;}
+.message-home {height: 10em;}
+.top-background {display: flex; flex-direction: column;}
+.top-background2::after {
+  background-image: url('images/backgrounds/struggle3.jpg');
+  position: absolute;
+  content: "";
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;   
+}
+.top-background::after {
+  background-image: url('images/backgrounds/struggle2.jpg');
+  position: absolute;
+  content: "";
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;  
+}
+.mid-low-footer {background-color: #fafaf0;}
+.info {background-color: #fafaf0; color: black; display: flex; flex-direction: row; text-align: justify; font-size: 110%; }
+.venue-date {font-size: 120%; font-weight: 600; padding: 3vh 0 3vh 0;}
+.acct-dets {font-size: 105%; font-weight: 600; padding: 1vh 0 1vh 0;}
+th, .venue-date, .acct-dets, .pt-section-header {color: #684600;}
+.pt-section-header {font-weight: 800; font-size: 100%;}
+.email, .phone, .address {font-size: 105%; font-weight: 600;}

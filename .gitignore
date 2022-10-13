@@ -1,0 +1,7 @@
+peemgames/
+includes/db.php
+.htaccess
+*.zip
+.ftpquota
+.well-known/
+cgi-bin/

@@ -1,0 +1,5 @@
+[13-Oct-2020 14:29:47 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/activepl/public_html/includes/db.php on line 12
+[13-Oct-2020 14:45:23 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/activepl/public_html/includes/db.php on line 12
+[13-Oct-2020 14:49:15 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'activepl_'@'localhost' (using password: YES) in /home/activepl/public_html/includes/db.php on line 12
+[13-Oct-2020 14:53:50 UTC] PHP Warning:  move_uploaded_file(../images/pt_proofs/proof_1.jpg): failed to open stream: No such file or directory in /home/activepl/public_html/practicaltheatre/processreg2.php on line 25
+[13-Oct-2020 14:53:50 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpZjhE5H' to '../images/pt_proofs/proof_1.jpg' in /home/activepl/public_html/practicaltheatre/processreg2.php on line 25
